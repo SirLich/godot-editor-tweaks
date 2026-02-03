@@ -1,6 +1,6 @@
 ![alt text](assets/banner.png)
 
-`Create Actor` is a small addon for the [Godot](https://godotengine.org/) game Engine which allows you to create new "actors". When you select this option, you will be prompted to create a new scene of a specified type and name. 
+`Godot Editor Tweaks` is a small addon for the [Godot](https://godotengine.org/) game Engine which adds a number of convenience features. This is primarily a testing ground for features or workflows which I want to see implemented in Engine.
 
 ![alt text](assets/create_actor.png)
 
