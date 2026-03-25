@@ -2,8 +2,8 @@
 
 extends EditorContextMenuPlugin
 
-var _popup_packed = preload("res://addons/create_actor/create_actor_popup.tscn")
-var _create_actor_svg = preload("res://addons/create_actor/CreateActor.svg")
+var _popup_packed = preload("res://addons/editor_tweaks/create_actor_popup.tscn")
+var _create_actor_svg = preload("res://addons/editor_tweaks/CreateActor.svg")
 var _path = ""
 
 func select_type(args : Array):

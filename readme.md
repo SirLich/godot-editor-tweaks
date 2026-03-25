@@ -32,6 +32,10 @@ You can use it for creating actors, components, levels, etc. Really anything tha
 
 # Version History
 
+## 1.6.1 
+
+- Renamed 'create_actor' folder to 'editor_tweaks'
+
 ## 1.6.0
 
  - Removes ability to use @export vars with drag+drop (integrated into Godot itself!)

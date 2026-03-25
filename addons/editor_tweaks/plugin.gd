@@ -2,13 +2,13 @@
 
 extends EditorPlugin
 
-var create_actor_plugin_script = preload("res://addons/create_actor/create_actor.gd")
+var create_actor_plugin_script = preload("res://addons/editor_tweaks/create_actor.gd")
 var create_actor_plugin : EditorContextMenuPlugin
 
-var randomizer_plugin_script = preload("res://addons/create_actor/create_randomizer.gd")
+var randomizer_plugin_script = preload("res://addons/editor_tweaks/create_randomizer.gd")
 var randomizer_plugin : EditorContextMenuPlugin
 
-var retarget_animation_packed = preload("res://addons/create_actor/retarget_animation_gui.tscn")
+var retarget_animation_packed = preload("res://addons/editor_tweaks/retarget_animation_gui.tscn")
 var retarget_animation_dock : Control
 
 func get_base_editor() -> CodeEdit:

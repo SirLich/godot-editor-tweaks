@@ -2,7 +2,7 @@
 
 extends EditorContextMenuPlugin
 
-var _randomizer_svg = preload("res://addons/create_actor/CreateRandomizer.svg")
+var _randomizer_svg = preload("res://addons/editor_tweaks/CreateRandomizer.svg")
 
 func select_type(args : Array[String]):
 	var randomizer = AudioStreamRandomizer.new()

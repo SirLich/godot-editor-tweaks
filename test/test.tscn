@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cjaxhsfrqwpue"]
 
-[ext_resource type="Texture2D" uid="uid://cjfpc171yuv5m" path="res://addons/create_actor/CreateActor.svg" id="1_syuel"]
+[ext_resource type="Texture2D" uid="uid://cjfpc171yuv5m" path="res://addons/editor_tweaks/CreateActor.svg" id="1_syuel"]
 
 [sub_resource type="Animation" id="Animation_8a8pi"]
 length = 0.001
