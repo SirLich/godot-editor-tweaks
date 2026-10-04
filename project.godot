@@ -12,11 +12,11 @@ config_version=5
 
 config/name="Addon: Godot Editor Tweaks"
 config/tags=PackedStringArray("addon")
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/create_actor/plugin.cfg")
+enabled=PackedStringArray("res://addons/editor_tweaks/plugin.cfg")
 
 [rendering]
 
