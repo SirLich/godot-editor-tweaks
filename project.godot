@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/create_actor/plugin.cfg")
+enabled=PackedStringArray("res://addons/editor_tweaks/plugin.cfg")
 
 [rendering]
 

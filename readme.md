@@ -2,33 +2,50 @@
 
 `Godot Editor Tweaks` is a small addon for the [Godot](https://godotengine.org/) game Engine which adds a number of convenience features. This is primarily a testing ground for features or workflows which I want to see implemented in Engine.
 
-![alt text](assets/create_actor.png)
+### How to Use
 
-The script will create a new folder based on this name, as well as a `.tscn` file, and a `.gd` script file.
+This addon is not currently in the Godot Asset Library, so if you want to use this addon you will need to download from github. The easiest way to do this is to use the `Code -> Download Zip` option. Drag the `addons/editor_tweaks` folder into your project.
+
+You will need to enable the plugin in `Project -> Project Settings -> Plugins`.
+
+# Features
+
+## Create Actor
+
+The "actor" flow defined in this plugin just automates the standard practice of creating a folder, scene, and script file, all with a shared name.
+
+You can use it for creating actors, components, levels, etc. Really anything that matches this format.
+
+![alt text](assets/create_actor.png)
 
 ![alt text](assets/folder_structure.png)
 
 The scene and script will both automatically be opened for editing, and the script will be attached to the root node of the scene, which will also be named correctly. 
 
-![alt text](assets/scene_structure.png)
+## Sound Randomizer
 
-Additionally, there are options to disable creation of the wrapping folder, or the script.
+Right-click a range of sound assets and quickly bundle them into a new AudioStreamRandomizer asset.
 
-![alt text](assets/creation_ui.png)
+![alt text](assets/sound_randomizer.png)
 
-## How to Use
+## Animation Rebasing
 
-This addon is not currently in the Godot Asset Library, so if you want to use this addon you will need to download from github. The easiest way to do this is to use the `Code -> Download Zip` option. Drag the 'addons' folder into your project, or just grab the 'create_actor' folder and move it into your own 'addons' folder.
+A new panel is introduced, which allows rebasing animations. In a nutshell, this is a utility for shifting *all* key-frames by a certain delta. 
 
-You will need to enable the plugin in `Project -> Project Settings -> Plugins`.
+For example, in the following gif, the *relative motion* of the attack is correct, but the goblins head is shifted and rotated.
 
-## Why?
+Fixing this normally requires editing everysingle key-frame, or simple re-creating the animation. With animation rebasing, you can repair the incorrect offset, and it apply it across the full animation.
 
-Godot doesn't have the concept of an "actor". Everything is just nodes and scenes. This is good and flexible, but annoying when you want to create many actors!
+![alt text](assets/rebase.gif)
 
-The "actor" flow defined in this plugin just automates the standard practice of creating a folder, scene, and GDScript file, all with a shared name.
 
-You can use it for creating actors, components, levels, etc. Really anything that matches this format.
+Click 'Start Rebasing' to tell the tool you want to start rebasing. This saves the current value of every animated field. 
+
+Next, change any number of animated properties.
+
+When you click apply, your change will be compared to the originally value, and the delta will be applied across every field of every key frame of every animation.
+
+It's a bit like a multi-edit tool for animations.
 
 # Version History
 
